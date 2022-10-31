@@ -6,20 +6,40 @@
 
     <style>
       #my-ar-container {
-        height: 60vw;
-        width: 70vw;
+        height: 50vw;
+        width: 60vw;
         position: relative;
-    	overflow: hidden;
+    	  overflow: hidden;
         margin: 0 auto;
-    }
+        z-index: 1;
+      }
+      img{
+        height: 1vw;
+        width: 1vw;
+      }
+      #target{
+        height: 7vw;
+        width: 10vw;
+      }
     </style>
 	
   </head>
   <body>
     <h1>Welcome to MindAR JS example</h1>
-    <h3>Please scan the following image</h3>
+    <h3>The image target and the instructions are in the bottom.  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAeFBMVEX///8AAAD8/Pz4+PgGBgb29vYKCgoRERHS0tIWFhYYGBggICDl5eXw8PAqKirs7Ow4ODhWVlbZ2dlbW1t/f39ERERQUFBubm6kpKSVlZWurq64uLiFhYU0NDQnJydLS0vHx8efn5+QkJB1dXVlZWXMzMyysrK8vLyocyZyAAAESElEQVR4nO3c2ULqMBQFUALIoCiKszgATv//h7cXUTpk2ElOkj7s9Z5ywDbdPUkdDIiIiIiIiIiIiIiIiIiIiIiIiIiobftQuoKj7TZ87JNSj3KVxNkp9RQ6dj1WSj1LVhPupipl/B02djNR/73LVhTmfl/KZBMydjZVPz6GwlV5G34cSpnO/Aev5urXVeFvMrr7K+V05Tt4caaO3k5S1Ic6ua2VcrbwG7x8VXWX52lqRJxfNkq5WHoNflFNL17DJS0u2qV4/KiNP+aPV88/qZTFa6eU2xE6ePjWGVydnN6XmYTVmaaUN3DyGV5pBis1D5j6Yn3OtaVcY6M/tIOrSXyTtGiN76mhlHtk9LthcHVjXaeuvGk9MZZy4x79bBxchZ3g2BbiYWwpZeca/WgZXImI0r7iKnmwjwZ+CSm2M2PPenasbX/NH8DZKcF8pf4aW67YYfsuqgPNGJGGppmz7sJyO+nkAZ3r5GF4eI18D2vWWLZDls4dnBHCnOiSRZsr/Z13Y1bXbdJYj5XgjI4jiZ8jhthJIXCCxpC8TO+BQ6UKw9q42wZPnDfAwU6ThOHZKfDRHreyHXC4FGF4Y4q7dV7hYgsccBLYLzP7NsfdI8+49+QOK2r8Jfs9oM/0DuCWh4HjUUV73Fv3BwY9EkHnq2CPO911aXhgbhLrcSMzZWjbAJrThXrcae9dmqZSl0SPG4rtMa01KPdcRYfhWpfaLC7ftRqverFhWNPY7IptP0PPBnEfAv1Y8QsChr5j00vE6QvFXYklmsQXYrYJZYB0NMKnxhUSd8WWMZ09psr8M+TIeW+6zq7fXkh8MHap60SX+q192AP/QPeVPZim+Uzo1xF+VAAferzOAuR8lX94q65L5Hz2uC6RGWQaNIO4QI0BeKZE5vQ0DQ4w1mP3Lugu67s5ACfWPINyT7omoFi+y5BEnSVINJizPBu4CDwD9WLpQqDHDcXd9ItJg9g+gWyXOk5Mj3uGxN1MC64xvTT5LnWcLVCOLial6FLHCes3p+lSxwn5bbfAkBRx187/bC+1euTiu0pWbj3Pxe+OUHKF1cUjDBde83aBU1OGLnUccMOHSGZOC9rwcQk9xSSPu3bQyQ/IEnft3wR5+nbKFHftkH6IQ7a4a4d0qKx68voT1jO0yBp37ZAurknuuGuHbPjQy71P3QUKwxol4q4dtPbUEbbOlRYUhltKxV07qGHVUOp9JxcoDNeUjLt2UFP3T8l3Al2gvH5Q9i1NlxGy8LFX+r1ZFzQMl3+T2QkKw714t9wFCMO9ibt2zjDcm/+/4GIPw9KbMlKybfiQ35SRkrnHnb9LHce04SPNpoyU9D3uMl3qOLpY38/Y7tLtcZfrUsdZtsJwn+OuXTMMp96UkVJ9OSH9poyUjj3u8l3qSIclt150qePsF0F70qWOs8u6KSOlmH+6RkRERERERERERERERERERERERERW/wAFLTvUOylhvwAAAABJRU5ErkJggg=="></h3>
 
     <div id="my-ar-container"></div>
 
+    
+    <h3>Please scan the following image:</h3>
+    <p>Click on the image to download it:</p> 
+    <a href="./assets/targets/targets.png" download>
+    <img src="./assets/targets/targets.png" alt="W3Schools" id="target"></a>
+
+    <h3>You can:</h3>
+    <ul>
+      <li>Press Enter Key to activate or desactivate the music.</li>
+      <li>When the characters appear, you can click anywhere on the screen many times to create colored rectangles in the background.</li>
+    </ul>
   </body>
 </html>
