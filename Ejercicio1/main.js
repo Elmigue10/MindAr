@@ -1,4 +1,4 @@
-import {loadGLTF, loadAudio} from "../../libs/loader.js";
+import {loadGLTF, loadAudio} from "./libs/loader.js";
 
 const THREE = window.MINDAR.IMAGE.THREE;
 
